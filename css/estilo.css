@@ -1,0 +1,99 @@
+* { margin: 0; padding: 0; border: 0; font-family: Arial, Helvetica, sans-serif;}
+a { text-decoration: none;}
+li { list-style: none; padding-left: 7px; padding-right: 7px; }
+button { cursor: pointer;}
+header{
+    width: 100%;
+    background-color: royalblue;
+}
+nav{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+li{
+
+}
+.bigtext{
+    font-size: 22px;
+}
+.enlacemenu{
+    color: white;
+}
+.enlacemenu:hover{
+    color: black;
+}
+
+ol{
+    display: flex;
+}
+
+/* Banner */
+.banner{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.imagenbanner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Lista */
+.listaobsequios{
+    width: 100%;
+}
+.listaobsequios-contenido{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.gridobsequios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    border-top: 1px solid gray;
+}
+.post{
+    border: 1px solid gray;
+    overflow: hidden;
+}
+.imgdesayuno{
+    width: 100%;
+}
+.infodesayuno{
+
+}
+.botonagregar{
+    background-color: royalblue;
+    border-radius: 5px;
+    color: white;
+    padding: 7px 20px;
+}
+.botonagregar:hover{
+    background-color: navy;
+}
+.botonmas{
+    background-color: royalgrayblue;
+    border-radius: 5px;
+    color: black;
+    padding: 7px 20px;
+}
+.botonmas:hover{
+    background-color: slategray;
+}
+
