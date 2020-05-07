@@ -147,6 +147,9 @@ h4{
     .gridobsequios{
         grid-template-columns: repeat(2, 1fr);
     }
+    .aTuMedida-contenido{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 500px){
@@ -206,6 +209,19 @@ article{
 .textoazul{
     color: lightseagreen;
 }
+.cajaregalos{
+    display: flex;
+}
 .tamanioregalos{
     width: 200px;
+}
+
+.flexpost1{
+    display: flex;
+    padding: 30px 0;
+}
+
+input{
+    border: 1px solid gray;
+    padding: 1em;
 }
