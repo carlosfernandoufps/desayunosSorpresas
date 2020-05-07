@@ -16,10 +16,15 @@ nav{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-ul{
-    width: auto;
+.menu {
     display: flex;
     align-items: center;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: .5s;
+    transition: .5s;
+    width: 100%;
 }
 li{
 
@@ -66,17 +71,34 @@ ol{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
+    padding-top: 20px;
+    margin-top: 20px;
     border-top: 1px solid gray;
+}
+.cajaprecio{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .post{
     border: 1px solid gray;
     overflow: hidden;
 }
+.figuradesayuno{
+    width: 100%;
+    height: 180px;
+}
 .imgdesayuno{
     width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 .infodesayuno{
-
+    padding: 10px;
+}
+h4{
+    color: dodgerblue;
 }
 .botonagregar{
     background-color: royalblue;
@@ -96,4 +118,72 @@ ol{
 .botonmas:hover{
     background-color: slategray;
 }
+.oculto{
+    display: none;
+}
+.cajahamburguesa{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media (max-width: 900px){
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .oculto{
+        display: block;
+    }
+    .ocultar{
+        display: none;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    ol{
+        flex-direction: column;
+    }
+    .enlacemenu{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menu {
+        background-color: #030EFF;
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+        transition: .5s;
+        width: 100%;
+    }
+    .active{
+        background-color: #030EFF;
+        display: block;
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        -webkit-transition: .5s;
+        transition: .5s;
+        width: 100%;
+    }
+}
 
+.active {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 180px;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+
+
+
+  /* responsive */
+  
+  
